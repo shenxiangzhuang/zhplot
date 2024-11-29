@@ -34,6 +34,9 @@ import matplotlib.pyplot as plt
 ```
 
 ### 一个简单的例子
+<div align="center">
+    <img src="https://github.com/shenxiangzhuang/zhplot/blob/7569552e07a8b4de7afd8c9df5cbcb154a349e97/docs/images/zhplot_demo.png?raw=true" width="500"/>
+</div>
 
 ```python
 import zhplot
@@ -46,5 +49,3 @@ plt.xlabel('横坐标')
 plt.ylabel('纵坐标')
 plt.show()
 ```
-
-![example](./docs/images/zhplot_demo.png)
