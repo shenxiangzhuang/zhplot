@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zhplot"
-version = "0.1.0"
+version = "0.0.1"
 description = "Show Chinese in Figures with one line code."
 authors = [
     {name = "Xiangzhuang Shen", email = "datahonor@gmail.com"},
@@ -28,7 +28,9 @@ classifiers=[
 #    "Programming Language :: Python :: 3.13",
 ]
 requires-python = ">= 3.9"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.9.2",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -56,9 +58,7 @@ docs = [
     "mkdocs-git-committers-plugin-2",
     "mkdocs-git-revision-date-localized-plugin",
 ]
-matplotlib = [
-    "matplotlib>=3.9.2",
-]
+
 
 [project.urls]
 "Homepage" = "https://shenxiangzhuang.github.io/zhplot"
@@ -78,3 +78,7 @@ namespaces = false
 
 [tool.isort]
 profile = "black"
+
+[tool.ruff]
+# Allow lines to be as long as 120.
+line-length = 120

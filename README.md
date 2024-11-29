@@ -25,6 +25,4 @@
 </center>
 
 
-# Documentation
-
-[https://datahonor.com/zhplot/](https://datahonor.com/zhplot/)
+# Quick start

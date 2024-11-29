@@ -1,19 +1,17 @@
-import os
+from dataclasses import dataclass
+from pathlib import Path
 
 import matplotlib
 from matplotlib import font_manager
-from dataclasses import dataclass
-from pathlib import Path
 
 
 @dataclass
 class MatplotlibChineseize:
-    font_name: str = 'simhei'
-    font_ttf: str = 'simhei.ttf'
-    font_dir: str = 'fonts'
+    font_name: str = "simhei"
+    font_ttf: str = "simhei.ttf"
 
     def __post_init__(self):
-        self.font_dir_path = Path(__file__).parent / self.font_dir
+        self.font_dir_path = Path(__file__).parent / "fonts"
         self.font_ttf_path = self.font_dir_path / self.font_ttf
 
     def setup(self):
@@ -21,7 +19,8 @@ class MatplotlibChineseize:
         font_files = font_manager.findSystemFonts(fontpaths=[self.font_dir_path])
         for fpath in font_files:
             font_manager.fontManager.addfont(fpath)
-        matplotlib.rc('font', family=self.font_name)
+        matplotlib.rc("font", family=self.font_name)
+        matplotlib.rc("axes", unicode_minus=False)
 
 
 def matplotlib_chineseize():
