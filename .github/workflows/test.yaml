@@ -39,6 +39,7 @@ jobs:
         if: success() && matrix.os == 'ubuntu-latest' && matrix.python-version == '3.13'
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          slug: shenxiangzhuang/zhplot
           files: ./coverage.xml
           fail_ci_if_error: true
           verbose: true
