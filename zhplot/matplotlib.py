@@ -20,7 +20,6 @@ class MatplotlibChineseize:
         for fpath in font_files:
             font_manager.fontManager.addfont(fpath)
         matplotlib.rc("font", family=self.font_name)
-        matplotlib.rc("axes", unicode_minus=False)
 
 
 def matplotlib_chineseize():
