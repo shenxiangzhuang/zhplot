@@ -8,18 +8,6 @@ copyright: Copyright &copy; 2023 Xiangzhuang Shen
 # Page tree
 nav:
   - Home: index.md
-  - Package Management:
-      - package/index.md
-  - Documentation:
-      - doc/index.md
-  - Linters&Formatters:
-      - linter/index.md
-  - Testing:
-      - test/index.md
-  - Task Runner:
-      - task/index.md
-  - Miscellaneous:
-      - miscellaneous/index.md
   - Changelog: changelog.md
   - Author's website: https://shenxiangzhuang.github.io/
 

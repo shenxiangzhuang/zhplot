@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "mppt"
-version = "0.4.0"
-description = "A Modern Python Package Template"
+name = "zhplot"
+version = "0.1.0"
+description = "Show Chinese in Figures with one line code."
 authors = [
     {name = "Xiangzhuang Shen", email = "datahonor@gmail.com"},
 ]
@@ -58,28 +58,19 @@ docs = [
 ]
 
 [project.urls]
-"Homepage" = "https://shenxiangzhuang.github.io/mppt"
-"Bug Tracker" = "https://shenxiangzhuang.github.io/mppt/issues"
-"Documentation" = "https://shenxiangzhuang.github.io/mppt"
-"Source Code" = "https://github.com/shenxiangzhuang/mppt"
-"Release Notes" = "https://shenxiangzhuang.github.io/mppt/changelog/"
+"Homepage" = "https://shenxiangzhuang.github.io/zhplot"
+"Bug Tracker" = "https://shenxiangzhuang.github.io/zhplot/issues"
+"Documentation" = "https://shenxiangzhuang.github.io/zhplot"
+"Source Code" = "https://github.com/shenxiangzhuang/zhplot"
+"Release Notes" = "https://shenxiangzhuang.github.io/zhplot/changelog/"
 
 [tool.setuptools]
 zip-safe = true
 include-package-data = true
 
 [tool.setuptools.packages.find]
-include = ["mppt*"]
+include = ["zhplot*"]
 namespaces = false
-
-[tool.commitizen]
-name = "cz_conventional_commits"
-tag_format = "$version"
-version_scheme = "semver"
-version_provider = "poetry"
-update_changelog_on_bump = true
-major_version_zero = true
-changelog_incremental = true
 
 
 [tool.isort]

@@ -32,7 +32,7 @@ jobs:
         run: uv sync --all-extras --dev
 
       - name: Run tests and generate coverage report
-        run: uv run pytest --doctest-modules -v --cov=mppt --cov-fail-under 90 --cov-report=term --cov-report=xml --cov-report=html mppt tests
+        run: uv run pytest --doctest-modules -v --cov=zhplot --cov-fail-under 90 --cov-report=term --cov-report=xml --cov-report=html zhplot tests
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
