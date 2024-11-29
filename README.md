@@ -1,12 +1,4 @@
-<p align="center" style="font-size:80px; margin:0px 10px 0px 10px">
-    <em>Zh-Plot</em>
-</p>
-<p align="center", style="font-size: 40px">
-    <em>Show Chinese in Figures with one line code
-</em>
-</p>
-
-<center>
+# Zh-Plot: Show Chinese in Figures with one line code
 
 [![Python](https://img.shields.io/pypi/pyversions/zhplot.svg?color=%2334D058)](https://pypi.org/project/zhplot/)
 [![PyPI](https://img.shields.io/pypi/v/zhplot?color=%2334D058&label=pypi%20package)](https://pypi.org/project/zhplot/)
@@ -22,9 +14,37 @@
 [![Codecov](https://codecov.io/gh/shenxiangzhuang/zhplot/branch/master/graph/badge.svg)](https://codecov.io/gh/shenxiangzhuang/zhplot)
 [![GitHub License](https://img.shields.io/github/license/shenxiangzhuang/zhplot)](https://github.com/shenxiangzhuang/zhplot/blob/master/LICENSE)
 
-</center>
+
+## 快速开始
+
+### 安装
+
+使用pip安装`zhplot`:
+
+```bash
+pip install zhplot
+```
+
+### 使用方法
+
+使用`zhplot`非常简单，只需在脚本开头导入即可:
+```diff
++ import zhplot
+import matplotlib.pyplot as plt
+```
+
+### 一个简单的例子
+
+```python
+import zhplot
+import matplotlib.pyplot as plt
 
 
-# Documentation
+plt.plot([1, 2, 3, 4])
+plt.title('这是一个标题')
+plt.xlabel('横坐标')
+plt.ylabel('纵坐标')
+plt.show()
+```
 
-[https://datahonor.com/zhplot/](https://datahonor.com/zhplot/)
+![example](./docs/images/zhplot_demo.png)

@@ -57,8 +57,6 @@ theme:
 
 docs_dir: docs
 
-extra_css:
-  - css/extra.css
 
 extra_javascript:
   - js/config.js

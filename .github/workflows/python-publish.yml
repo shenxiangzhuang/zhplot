@@ -16,10 +16,14 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
+  pypi-publish:
+    name: upload release to PyPI
     runs-on: ubuntu-latest
-    environment: publish
-
+    # Specifying a GitHub environment is optional, but strongly encouraged
+    environment: pypi
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
     steps:
     - uses: actions/checkout@v4
     - name: Install uv
@@ -36,9 +40,5 @@ jobs:
       run: uv sync --all-extras --dev
     - name: Build package
       run: uv build
-    # TODO: Change with `uv publish`
-    - name: Publish package
-      uses: pypa/gh-action-pypi-publish@15c56dba361d8335944d31a2ecd17d700fc7bcbc
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1

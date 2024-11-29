@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zhplot"
-version = "0.1.0"
+version = "0.0.1"
 description = "Show Chinese in Figures with one line code."
 authors = [
     {name = "Xiangzhuang Shen", email = "datahonor@gmail.com"},
@@ -20,15 +20,16 @@ classifiers=[
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-#    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.13",
 ]
 requires-python = ">= 3.9"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.9.2",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -57,6 +58,7 @@ docs = [
     "mkdocs-git-revision-date-localized-plugin",
 ]
 
+
 [project.urls]
 "Homepage" = "https://shenxiangzhuang.github.io/zhplot"
 "Bug Tracker" = "https://shenxiangzhuang.github.io/zhplot/issues"
@@ -72,6 +74,12 @@ include-package-data = true
 include = ["zhplot*"]
 namespaces = false
 
+[tool.setuptools.package-data]
+zhplot = ["./fonts/*.ttf"]
 
 [tool.isort]
 profile = "black"
+
+[tool.ruff]
+# Allow lines to be as long as 120.
+line-length = 120
