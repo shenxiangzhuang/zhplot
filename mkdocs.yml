@@ -1,0 +1,114 @@
+site_name: MPPT
+repo_url: https://github.com/shenxiangzhuang/mppt
+repo_name: shenxiangzhuang/mppt
+site_description: A Modern Python Package Template
+site_author: Xiangzhuang Shen
+copyright: Copyright &copy; 2023 Xiangzhuang Shen
+
+# Page tree
+nav:
+  - Home: index.md
+  - Package Management:
+      - package/index.md
+  - Documentation:
+      - doc/index.md
+  - Linters&Formatters:
+      - linter/index.md
+  - Testing:
+      - test/index.md
+  - Task Runner:
+      - task/index.md
+  - Miscellaneous:
+      - miscellaneous/index.md
+  - Changelog: changelog.md
+  - Author's website: https://shenxiangzhuang.github.io/
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - content.action.edit
+    - content.action.view
+    - announce.dismiss
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.prune
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+    - content.code.annotate
+
+docs_dir: docs
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/shenxiangzhuang/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/xiangzhuang-shen-a81825157/
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums_style: pymdownx.inline
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.snippets:
+      url_download: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: "docs/references.bib"
+      csl_file: "docs/ieee.csl"
+      cite_inline: false

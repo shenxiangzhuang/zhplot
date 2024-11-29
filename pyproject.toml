@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "mppt"
+version = "0.4.0"
+description = "A Modern Python Package Template"
+authors = [
+    {name = "Xiangzhuang Shen", email = "datahonor@gmail.com"},
+]
+license = {text = "MIT"}
+readme = "README.md"
+
+
+classifiers=[
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+#    "Programming Language :: Python :: 3.13",
+]
+requires-python = ">= 3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "ipython",
+    "black",
+    "flake8",
+    "mypy",
+    "isort",
+    "ruff",
+    "pytest",
+    "pytest-cov",
+    "pytest-sugar",
+    "hypothesis>=6.112.0",
+    "commitizen",
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocs-material-extensions",
+    "mkdocstrings",
+    "mkdocs-bibtex",
+    "mkdocstrings-python",
+    "mkdocs-autorefs",
+    "mkdocs-git-committers-plugin-2",
+    "mkdocs-git-revision-date-localized-plugin",
+]
+
+[project.urls]
+"Homepage" = "https://shenxiangzhuang.github.io/mppt"
+"Bug Tracker" = "https://shenxiangzhuang.github.io/mppt/issues"
+"Documentation" = "https://shenxiangzhuang.github.io/mppt"
+"Source Code" = "https://github.com/shenxiangzhuang/mppt"
+"Release Notes" = "https://shenxiangzhuang.github.io/mppt/changelog/"
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["mppt*"]
+namespaces = false
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+changelog_incremental = true
+
+
+[tool.isort]
+profile = "black"
