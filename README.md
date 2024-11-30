@@ -19,15 +19,21 @@
 
 ### 安装
 
-使用pip安装`zhplot`:
+使用 pip 安装`zhplot`:
 
 ```bash
 pip install zhplot
 ```
 
+使用 uv 安装`zhplot`:
+
+```bash
+uv add zhplot
+```
+
 ### 使用方法
 
-使用`zhplot`非常简单，只需在脚本开头导入即可:
+使用`zhplot`非常简单，只需在脚本开头导入即可：
 ```diff
 + import zhplot
 import matplotlib.pyplot as plt
@@ -49,3 +55,7 @@ plt.xlabel('横坐标')
 plt.ylabel('纵坐标')
 plt.show()
 ```
+
+## 相似项目
+- [japanize-matplotlib](https://github.com/uehara1414/japanize-matplotlib)
+- [chineseize-matplotlib](https://github.com/cndeng/chineseize-matplotlib)
