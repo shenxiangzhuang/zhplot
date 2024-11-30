@@ -83,3 +83,6 @@ profile = "black"
 [tool.ruff]
 # Allow lines to be as long as 120.
 line-length = 120
+
+[tool.uv]
+extra-index-url = ["https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"]
