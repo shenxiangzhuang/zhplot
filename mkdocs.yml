@@ -1,9 +1,9 @@
-site_name: MPPT
-repo_url: https://github.com/shenxiangzhuang/mppt
-repo_name: shenxiangzhuang/mppt
-site_description: A Modern Python Package Template
+site_name: Zh-Plot
+repo_url: https://github.com/shenxiangzhuang/zhplot
+repo_name: shenxiangzhuang/zhplot
+site_description: Show Chinese in Figures with one line code.
 site_author: Xiangzhuang Shen
-copyright: Copyright &copy; 2023 Xiangzhuang Shen
+copyright: Copyright &copy; 2024 Xiangzhuang Shen
 
 # Page tree
 nav:
