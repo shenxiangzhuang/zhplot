@@ -7,8 +7,8 @@ from matplotlib import font_manager
 
 @dataclass
 class MatplotlibChineseize:
-    font_name: str = "simhei"
-    font_ttf: str = "simhei.ttf"
+    font_name: str = "Noto Sans SC"
+    font_ttf: str = "NotoSansSC-Regular.ttf"
 
     def __post_init__(self):
         self.font_dir_path = Path(__file__).parent / "fonts"
@@ -18,6 +18,7 @@ class MatplotlibChineseize:
         # Ref: https://github.com/uehara1414/japanize-matplotlib
         font_files = font_manager.findSystemFonts(fontpaths=[self.font_dir_path])
         for fpath in font_files:
+            print(fpath)
             font_manager.fontManager.addfont(fpath)
         matplotlib.rc("font", family=self.font_name)
 
