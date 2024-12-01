@@ -3,6 +3,8 @@
 
 ## [Unreleased]
 
+## [0.1.1] - 2024-12-01
+
 ### Changed
 - Change from `SimHei` to `Noto Sans SC`
 
