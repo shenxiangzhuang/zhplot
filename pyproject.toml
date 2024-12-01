@@ -75,7 +75,8 @@ include = ["zhplot*"]
 namespaces = false
 
 [tool.setuptools.package-data]
-zhplot = ["./fonts/*.ttf"]
+zhplot = ["./fonts/*.ttf", "./fonts/*.txt"]
+
 
 [tool.isort]
 profile = "black"
