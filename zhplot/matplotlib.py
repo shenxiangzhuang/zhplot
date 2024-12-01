@@ -18,7 +18,6 @@ class MatplotlibChineseize:
         # Ref: https://github.com/uehara1414/japanize-matplotlib
         font_files = font_manager.findSystemFonts(fontpaths=[self.font_dir_path])
         for fpath in font_files:
-            print(fpath)
             font_manager.fontManager.addfont(fpath)
         matplotlib.rc("font", family=self.font_name)
 
