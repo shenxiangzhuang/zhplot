@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zhplot"
-version = "0.1.0"
+version = "0.1.1"
 description = "Show Chinese in Figures with one line code."
 authors = [
     {name = "Xiangzhuang Shen", email = "datahonor@gmail.com"},
