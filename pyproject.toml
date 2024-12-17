@@ -51,7 +51,6 @@ docs = [
     "mkdocs-material",
     "mkdocs-material-extensions",
     "mkdocstrings",
-    "mkdocs-bibtex",
     "mkdocstrings-python",
     "mkdocs-autorefs",
     "mkdocs-git-committers-plugin-2",
