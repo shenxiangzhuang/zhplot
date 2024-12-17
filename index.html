@@ -372,6 +372,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      支持的框架
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       快速开始
     </span>
   </a>
@@ -380,7 +389,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -389,18 +398,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用方法
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      支持的框架
+      使用方法
     </span>
   </a>
   
@@ -506,6 +506,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      支持的框架
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       快速开始
     </span>
   </a>
@@ -514,7 +523,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       安装
     </span>
@@ -523,18 +532,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用方法
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      支持的框架
+      使用方法
     </span>
   </a>
   
@@ -606,24 +606,29 @@
 <a href="https://github.com/shenxiangzhuang/zhplot/actions/workflows/test.yaml"><img alt="Test" src="https://github.com/shenxiangzhuang/zhplot/actions/workflows/test.yaml/badge.svg" /></a>
 <a href="https://codecov.io/gh/shenxiangzhuang/zhplot"><img alt="Codecov" src="https://codecov.io/gh/shenxiangzhuang/zhplot/branch/master/graph/badge.svg" /></a>
 <a href="https://github.com/shenxiangzhuang/zhplot/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/shenxiangzhuang/zhplot" /></a></p>
-<h2 id="_1">快速开始<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h2 id="_1">支持的框架<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/matplotlib/matplotlib">matplotlib</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/amueller/word_cloud">wordcloud</a></li>
+</ul>
+<h2 id="_2">快速开始<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>使用 pip 安装<code>zhplot</code>:</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>zhplot
 </code></pre></div>
 <p>使用 uv 安装<code>zhplot</code>:</p>
 <div class="highlight"><pre><span></span><code>uv<span class="w"> </span>add<span class="w"> </span>zhplot
 </code></pre></div>
-<h3 id="_3">使用方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_4">使用方法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>使用<code>zhplot</code>非常简单，只需在脚本开头导入即可：
 <div class="highlight"><pre><span></span><code><span class="gi">+ import zhplot</span>
 import matplotlib.pyplot as plt
+import wordcloud
 </code></pre></div></p>
-<h3 id="_4">支持的框架<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/matplotlib/matplotlib">matplotlib</a></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/amueller/word_cloud">wordcloud</a></li>
-</ul>
+<p>在汉化wordcloud的时候<code>import zhplot</code>需要在前面:
+<div class="highlight"><pre><span></span><code><span class="gi">+ import zhplot</span>
+import wordcloud
+</code></pre></div></p>
 <h3 id="_5">一个简单的例子<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div align="center">
     <img src="https://github.com/shenxiangzhuang/zhplot/blob/7569552e07a8b4de7afd8c9df5cbcb154a349e97/docs/images/zhplot_demo.png?raw=true" width="500"/>
