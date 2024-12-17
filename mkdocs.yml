@@ -94,7 +94,3 @@ markdown_extensions:
 
 plugins:
   - search
-  - bibtex:
-      bib_file: "docs/references.bib"
-      csl_file: "docs/ieee.csl"
-      cite_inline: false
