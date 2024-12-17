@@ -13,7 +13,14 @@ jobs:
       matrix:
         python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
         os: [ubuntu-latest, macos-latest, windows-latest]
+        exclude:
+          # TODO: re-include it
+          # excludes python3.13 on windows due to error: Windows fatal exception: access violation
+          - os: windows-latest
+            python-version: "3.13"
     runs-on: ${{ matrix.os }}
+    env:
+      UV_HTTP_TIMEOUT: 900 # max 15min to install deps
     steps:
       - uses: actions/checkout@v4
 
@@ -23,10 +30,10 @@ jobs:
           enable-cache: true
           cache-dependency-glob: "uv.lock"
 
-      - name: "Set up Python"
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version-file: "pyproject.toml"
+          python-version: ${{ matrix.python-version }}
 
       - name: Install the project
         run: uv sync --all-extras --dev
