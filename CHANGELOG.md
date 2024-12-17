@@ -3,6 +3,8 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2024-12-17
+
 ### Added
 - Support chinese display in `wordcloud`
 
