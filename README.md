@@ -15,6 +15,11 @@
 [![GitHub License](https://img.shields.io/github/license/shenxiangzhuang/zhplot)](https://github.com/shenxiangzhuang/zhplot/blob/master/LICENSE)
 
 
+## 支持的框架
+- [x] [matplotlib](https://github.com/matplotlib/matplotlib)
+- [x] [wordcloud](https://github.com/amueller/word_cloud)
+
+
 ## 快速开始
 
 ### 安装
@@ -31,17 +36,21 @@ pip install zhplot
 uv add zhplot
 ```
 
+
 ### 使用方法
 
 使用`zhplot`非常简单，只需在脚本开头导入即可：
 ```diff
 + import zhplot
 import matplotlib.pyplot as plt
+import wordcloud
 ```
 
-### 支持的框架
-- [x] [matplotlib](https://github.com/matplotlib/matplotlib)
-- [x] [wordcloud](https://github.com/amueller/word_cloud)
+在汉化wordcloud的时候`import zhplot`需要在前面:
+```diff
++ import zhplot
+import wordcloud
+```
 
 ### 一个简单的例子
 <div align="center">
