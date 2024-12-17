@@ -39,6 +39,10 @@ uv add zhplot
 import matplotlib.pyplot as plt
 ```
 
+### 支持的框架
+- [x] [matplotlib](https://github.com/matplotlib/matplotlib)
+- [x] [wordcloud](https://github.com/amueller/word_cloud)
+
 ### 一个简单的例子
 <div align="center">
     <img src="https://github.com/shenxiangzhuang/zhplot/blob/7569552e07a8b4de7afd8c9df5cbcb154a349e97/docs/images/zhplot_demo.png?raw=true" width="500"/>
@@ -55,6 +59,7 @@ plt.xlabel('横坐标')
 plt.ylabel('纵坐标')
 plt.show()
 ```
+
 
 ## 相似项目
 - [japanize-matplotlib](https://github.com/uehara1414/japanize-matplotlib)
