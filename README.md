@@ -43,7 +43,6 @@ uv add zhplot
 ```diff
 + import zhplot
 import matplotlib.pyplot as plt
-import wordcloud
 ```
 
 在汉化wordcloud的时候`import zhplot`需要在前面:
