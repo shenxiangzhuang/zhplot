@@ -41,12 +41,8 @@ jobs:
       - name: Run tests and generate coverage report
         run: uv run pytest --doctest-modules -v --cov=zhplot --cov-fail-under 90 --cov-report=term --cov-report=xml --cov-report=html zhplot tests
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
+      - name: Upload test results to Codecov
         if: success() && matrix.os == 'ubuntu-latest' && matrix.python-version == '3.13'
+        uses: codecov/test-results-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: shenxiangzhuang/zhplot
-          files: ./coverage.xml
-          fail_ci_if_error: true
-          verbose: true
