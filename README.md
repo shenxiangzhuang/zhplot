@@ -1,4 +1,4 @@
-# Zh-Plot: Show Chinese in Figures with one line code
+# Zh-Plot: 一行代码搞定Python图表中文展示
 
 [![Python](https://img.shields.io/pypi/pyversions/zhplot.svg?color=%2334D058)](https://pypi.org/project/zhplot/)
 [![PyPI](https://img.shields.io/pypi/v/zhplot?color=%2334D058&label=pypi%20package)](https://pypi.org/project/zhplot/)
@@ -24,13 +24,13 @@
 
 ### 安装
 
-使用 pip 安装`zhplot`:
+使用 [pip](https://pip.pypa.io/) 安装`zhplot`:
 
 ```bash
 pip install zhplot
 ```
 
-使用 uv 安装`zhplot`:
+使用 [uv](https://docs.astral.sh/uv/) 安装`zhplot`:
 
 ```bash
 uv add zhplot
