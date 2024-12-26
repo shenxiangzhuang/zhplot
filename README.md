@@ -1,4 +1,4 @@
-# Zh-Plot: 一行代码搞定Python图表中文展示
+# Zh-Plot: 一行代码搞定 Python 图表中文展示
 
 [![Python](https://img.shields.io/pypi/pyversions/zhplot.svg?color=%2334D058)](https://pypi.org/project/zhplot/)
 [![PyPI](https://img.shields.io/pypi/v/zhplot?color=%2334D058&label=pypi%20package)](https://pypi.org/project/zhplot/)
@@ -45,7 +45,7 @@ uv add zhplot
 import matplotlib.pyplot as plt
 ```
 
-在汉化wordcloud的时候`import zhplot`需要在前面:
+在汉化 wordcloud 的时候`import zhplot`需要在前面：
 ```diff
 + import zhplot
 import wordcloud
