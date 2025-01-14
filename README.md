@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/pypi/pyversions/zhplot.svg?color=%2334D058)](https://pypi.org/project/zhplot/)
 [![PyPI](https://img.shields.io/pypi/v/zhplot?color=%2334D058&label=pypi%20package)](https://pypi.org/project/zhplot/)
+[![PyPI Downloads](https://static.pepy.tech/badge/zhplot)](https://pepy.tech/projects/zhplot)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
