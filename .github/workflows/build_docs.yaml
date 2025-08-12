@@ -18,7 +18,7 @@ jobs:
     env:
       UV_HTTP_TIMEOUT: 900 # max 15min to install deps
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
             fetch-depth: 0
 
@@ -50,7 +50,7 @@ jobs:
     env:
       UV_HTTP_TIMEOUT: 900 # max 15min to install deps
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
             fetch-depth: 0
 
