@@ -45,7 +45,7 @@ dev = [
     "pytest",
     "pytest-cov",
     "pytest-sugar",
-    "hypothesis>=6.112.0",
+    "hypothesis>=6.141.1",
     "commitizen",
 ]
 docs = [
